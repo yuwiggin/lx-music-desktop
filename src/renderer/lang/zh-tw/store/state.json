@@ -19,6 +19,7 @@
   "source_mg": "咪咕音樂",
   "source_xm": "蝦米音樂",
   "source_bd": "百度音樂",
+  "source_gg": "傑集音樂",
   "source_all": "聚合搜索",
   "source_alias_kw": "小蝸音樂",
   "source_alias_kg": "小枸音樂",
@@ -27,6 +28,7 @@
   "source_alias_mg": "小蜜音樂",
   "source_alias_bd": "小杜音樂",
   "source_alias_xm": "小霞音樂",
+  "source_alias_gg": "小傑音樂",
   "source_alias_all": "聚合大會",
 
   "load_list_file_error_title": "播放列表數據加載錯誤",

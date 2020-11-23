@@ -20,6 +20,7 @@
   "source_mg": "咪咕音乐",
   "source_xm": "虾米音乐",
   "source_bd": "百度音乐",
+  "source_bd": "杰集音乐",
 
   "source_all": "聚合搜索",
 
@@ -30,6 +31,7 @@
   "source_alias_mg": "小蜜音乐",
   "source_alias_xm": "小霞音乐",
   "source_alias_bd": "小杜音乐",
+  "source_alias_gg": "小杰音乐",
 
   "source_alias_all": "聚合大会",
 

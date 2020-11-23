@@ -37,8 +37,10 @@ const actions = {
     }
     if (urlRequest && urlRequest.cancelHttp) urlRequest.cancelHttp()
     if (musicInfo.typeUrl[type] && !isRefresh) return Promise.resolve()
+    // console.log('musicInfo.source', musicInfo.source, musicInfo.songmid)
     urlRequest = music[musicInfo.source].getMusicUrl(musicInfo, type)
     return urlRequest.promise.then(result => {
+      // console.log('getUrl.result', result)
       commit('setUrl', { musicInfo, url: result.url, type })
       urlRequest = null
     }).catch(err => {

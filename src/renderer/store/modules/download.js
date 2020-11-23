@@ -155,6 +155,7 @@ const getUrl = (downloadInfo, isRefresh) => {
 
     // return Promise.reject(new Error('该歌曲没有可下载的音频'))
   }
+  // console.log('getUrl(downloadInfo, isRefresh)', downloadInfo, url)
   return url && !isRefresh ? Promise.resolve({ url }) : music[downloadInfo.musicInfo.source].getMusicUrl(downloadInfo.musicInfo, downloadInfo.type).promise
 }
 

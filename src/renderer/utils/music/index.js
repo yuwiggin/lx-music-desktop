@@ -3,8 +3,8 @@ import kg from './kg'
 import tx from './tx'
 import wy from './wy'
 import mg from './mg'
-import bd from './bd'
 import xm from './xm'
+import gg from './gg'
 import { supportQuality } from './api-source'
 
 
@@ -34,24 +34,25 @@ const sources = {
       name: '虾米音乐',
       id: 'xm',
     },
-    // {
-    //   name: '百度音乐',
-    //   id: 'bd',
-    // },
+    {
+      name: '杰集音乐',
+      id: 'gg',
+    },
   ],
   kw,
   kg,
   tx,
   wy,
   mg,
-  bd,
   xm,
+  gg,
 }
 export default {
   ...sources,
   init() {
     for (let source of sources.sources) {
       let sm = sources[source.id]
+      // console.log('music.index: source.id', source.id)
       sm && sm.init && sm.init()
     }
   },

@@ -47,6 +47,7 @@ const actions = {
     // let key = `${source}${tabId}${page}`
     // if (state.list.length && state.key == key) return true
     // commit('clearList')
+    // console.log('getBoardsList', state.boards[source].length)
     if (state.boards[source].length) return
     return music[source].leaderboard.getBoards().then(result => commit('setBoardsList', { boards: result, source }))
   },
@@ -55,6 +56,7 @@ const actions = {
     let tabId = rootState.setting.leaderboard.tabId
     let [source, bangId] = tabId.split('__')
     let key = `${source}${tabId}${page}`
+    // console.log('getList', state.list.length, state.key == key)
     if (state.list.length && state.key == key) return true
     commit('clearList')
     return music[source].leaderboard.getList(bangId, page).then(result => commit('setList', { result, key }))
