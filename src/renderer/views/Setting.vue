@@ -260,7 +260,7 @@ div.scroll(:class="$style.setting" ref="dom_setting")
         | 地阅读常见问题后，
       p.small
         | 仍有问题可加企鹅群&nbsp;
-        span.hover(:tips="$t('view.setting.click_open')" @click="handleOpenUrl('https://jq.qq.com/?_wv=1027&k=51ECeq2')") 830125506
+        span.hover(:tips="$t('view.setting.click_open')" @click="handleOpenUrl('https://jq.qq.com/?_wv=1027&k=51ECeq2')") 341051430
         | &nbsp;反馈
         strong (为免满人，无事勿加，入群先看群公告)
         | ，或到 GitHub 提交&nbsp;

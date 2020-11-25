@@ -8,10 +8,11 @@ const api_test = {
       // const requestObj = httpFetch(`https://crex.geekgit.com/url/gg/${songInfo.songmid}/${type}`, {
       // const requestObj = httpFetch('https://crex.geekgit.com/ipfs/QmRjFsbGX8zdVcMCCDTay3Rrv2u7c9tQHRsYYpeA9h1vSZ', {
     let url = `https://crex.geekgit.com/getUrl?pieceId=${songInfo.songmid}&type=${type}`
+    // let url = `http://localhost:3000/getUrl?pieceId=${songInfo.songmid}&type=${type}`
     const requestObj = httpFetch(url, {})
     requestObj.promise = requestObj.promise.then((rsp) => {
       const { statusCode, body } = rsp
-      console.log('getMusicUrl => rsp, body', rsp, body)
+      // console.log('getMusicUrl => rsp, body', rsp, body)
       return statusCode === 200 ? Promise.resolve({ type, url: body.url }) : Promise.reject(new Error(requestMsg.fail))
     })
     return requestObj
